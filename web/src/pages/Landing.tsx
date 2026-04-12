@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import sky from "../assets/sky1.png";
+import sky from "../assets/landingsky1.png";
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ export default function Landing() {
         <p className="mt-4 text-lg md:text-xl font-[var(--font-heading)] text-[var(--color-primary)] opacity-80">
           A peaceful place to explore stories
         </p>
-        <button className="mt-8 bg-[var(--color-secondary)] text-primary px-6 py-2 rounded-full" onClick={() => navigate("/home")}>
+        <button className="mt-8 bg-[var(--color-secondary)] border border-[var(--color-primary)] text-primary px-6 py-2 rounded-full hover:bg-[var(--color-primary)]/70 hover:text-[var(--color-secondary)] transition-colors duration-300 cursor-pointer" onClick={() => navigate("/home")}>
             Explore
         </button>
       </div>
